@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct BarcodeTextScannerApp: App {
+    
+    @StateObject private var viewModel = MainViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
+                .task {
+                    await viewModel.requestDataScannerAccessStatus()
+                }
         }
     }
 }

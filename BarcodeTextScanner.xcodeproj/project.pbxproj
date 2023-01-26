@@ -11,6 +11,8 @@
 		65A41F5E2982F93D00501C21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A41F5D2982F93D00501C21 /* ContentView.swift */; };
 		65A41F602982F94000501C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A41F5F2982F94000501C21 /* Assets.xcassets */; };
 		65A41F632982F94100501C21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A41F622982F94100501C21 /* Preview Assets.xcassets */; };
+		65A41F6A2982F9C900501C21 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A41F692982F9C900501C21 /* MainViewModel.swift */; };
+		65A41F6C2982FD2200501C21 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A41F6B2982FD2200501C21 /* DataScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		65A41F5D2982F93D00501C21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65A41F5F2982F94000501C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A41F622982F94100501C21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65A41F692982F9C900501C21 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		65A41F6B2982FD2200501C21 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				65A41F5B2982F93D00501C21 /* BarcodeTextScannerApp.swift */,
+				65A41F692982F9C900501C21 /* MainViewModel.swift */,
 				65A41F5D2982F93D00501C21 /* ContentView.swift */,
+				65A41F6B2982FD2200501C21 /* DataScannerView.swift */,
 				65A41F5F2982F94000501C21 /* Assets.xcassets */,
 				65A41F612982F94100501C21 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				65A41F5E2982F93D00501C21 /* ContentView.swift in Sources */,
 				65A41F5C2982F93D00501C21 /* BarcodeTextScannerApp.swift in Sources */,
+				65A41F6A2982F9C900501C21 /* MainViewModel.swift in Sources */,
+				65A41F6C2982FD2200501C21 /* DataScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = Y67XYRV445;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Для сканирования текста";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = Y67XYRV445;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Для сканирования текста";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
